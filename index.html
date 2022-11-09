@@ -1,0 +1,59 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Rate Your Experience Form</h1>
+    <p id="description">Please tell us a bit about what your experience was like with us today</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name
+          <input id="name" type="text" placeholder="Your Name" required>
+        </label>
+        <label id="email-label">Email
+          <input id="email" type="email" placeholder="Your Email Here" required>
+        </label>
+        <label id="number-label">Age
+          <input id="number" type="number" min="13" max="120" placeholder="Your Age Here" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Which meal did you have with us today?
+          <select id="dropdown" required>
+            <option value="">(Select One)</option>
+            <option value="1">Breakfast</option>
+            <option value="2">Lunch</option>
+            <option value="3">Dinner</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="recommend" required>
+          Would you recommend us?
+          <input type="radio" name="recommend" value="1" class="inline"> Yes
+          <input type="radio" name="recommend" value="2" class="inline"> No
+          <input type="radio" name="recommend" value="3" class="inline"> Maybe
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="checkbox">What did you enjoy most? (Check all that apply)
+          <input type="checkbox" value="1" class="inline-box"> The Food
+          <input type="checkbox" value="2" class="inline-box"> The Drinks
+          <input type="checkbox" value="3" class="inline-box"> The Atmosphere
+          <input type="checkbox" value="4" class="inline-box"> The Music
+          <input type="checkbox" value="5" class="inline-box"> The Service
+          <input type="checkbox" value="6" class="inline-box"> All Of The Above
+          <input type="checkbox" value="7" class="inline-box"> None Of The Above
+      </fieldset>
+      <fieldset>
+        <label id="comments">Any other comments/suggestions:
+          <textarea placeholder="Comments/Suggestions Here"></textarea>
+      </fieldset>
+      <input id="submit" type="submit">
+    </form>
+  </body>
+</html>
